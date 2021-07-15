@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* https://tailwindcss.com/docs/adding-base-styles */
+@layer base {
+    body {
+        @apply font-sans;
+    }
+    @font-face {
+        font-family: Inter;
+        font-weight: 400;
+        src: url(/fonts/Inter/inter-v3-latin-400.woff) format("woff");
+    }
+    @font-face {
+        font-family: Inter;
+        font-weight: 500;
+        src: url(/fonts/Inter/inter-v3-latin-500.woff) format("woff");
+    }
+    @font-face {
+        font-family: Inter;
+        font-weight: 700;
+        src: url(/fonts/Inter/inter-v3-latin-700.woff) format("woff");
+    }
+}
