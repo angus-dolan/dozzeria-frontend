@@ -4,22 +4,30 @@
 
 /* https://tailwindcss.com/docs/adding-base-styles */
 @layer base {
-    body {
-        @apply font-sans;
-    }
-    @font-face {
-        font-family: Inter;
-        font-weight: 400;
-        src: url(/fonts/Inter/inter-v3-latin-400.woff) format("woff");
-    }
-    @font-face {
-        font-family: Inter;
-        font-weight: 500;
-        src: url(/fonts/Inter/inter-v3-latin-500.woff) format("woff");
-    }
-    @font-face {
-        font-family: Inter;
-        font-weight: 700;
-        src: url(/fonts/Inter/inter-v3-latin-700.woff) format("woff");
-    }
+  body {
+    @apply font-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-dark-high-emphasis;
+    @apply dark:text-light-high-emphasis;
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(/fonts/Inter/inter-v3-latin-400.woff) format('woff');
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 500;
+    src: url(/fonts/Inter/inter-v3-latin-500.woff) format('woff');
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 700;
+    src: url(/fonts/Inter/inter-v3-latin-700.woff) format('woff');
+  }
 }

@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!-- Inlined in <head> to avoid FOUC -->
+    <script>
+      if (!localStorage.theme) {
+        // Enable light mode as default
+        localStorage.theme = 'light'
+        document.documentElement.classList.add('light')
+
+      } else if (localStorage.theme === 'light') {
+        // Light mode enabled
+        document.documentElement.classList.add('light')
+
+      } else if (localStorage.theme === 'dark') {
+        // Dark mode enabled
+        document.documentElement.classList.add('dark')
+
+      }
+    </script>
   </head>
   <body>
     <noscript>
