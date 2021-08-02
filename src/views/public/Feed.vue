@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-12 lg:gap-24">
+  <div class="grid grid-cols-12 gap-4">
 
     <!-- Posts -->
     <div class="col-span-12 lg:col-span-6">
@@ -8,7 +8,7 @@
       <post-card />
     </div>
     
-    <div class="hidden lg:block col-span-6">
+    <div class="hidden lg:block col-start-8 col-span-5">
       <!-- Featured Recipes (desktop only) -->
       <h2 class="font-medium text-xl pb-6">Featured Recipes</h2>
       <recipe-card 
