@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: [],
   darkMode: 'class', // 'media' or 'class'
-  theme: {
+  theme: { 
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -44,6 +44,18 @@ module.exports = {
         '700': '#B73853',
         '800': '#A3324F',
         '900': '#7D2A47',
+      },
+      green: {
+        '50': '#E8F5E9',
+        '100': '#C8E6C9',
+        '200': '#A5D6A7',
+        '300': '#81C784',
+        '400': '#66BB6A',
+        '500': '#4CAF50',
+        '600': '#43A047',
+        '700': '#388E3C',
+        '800': '#2E7D32',
+        '900': '#1B5E20',
       },
       light: {
         'high-emphasis': 'rgba(255,255,255, 1)', // white @ 100%
@@ -86,12 +98,42 @@ module.exports = {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray.700')
+          }
+        },
+        dark: {
+          css: {
+            color: theme('colors.gray.500'),
+            h1: {
+              color: theme('colors.light.high-emphasis')
+            },
+            h2: {
+              color: theme('colors.light.high-emphasis')
+            },
+            h3: {
+              color: theme('colors.light.high-emphasis')
+            },
+            h4: {
+              color: theme('colors.light.high-emphasis')
+            },
+            h5: {
+              color: theme('colors.light.high-emphasis')
+            },
+          }
+        }
+      }),
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      typography: ['dark']
+    },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('@tailwindcss/typography')
   ],
 }

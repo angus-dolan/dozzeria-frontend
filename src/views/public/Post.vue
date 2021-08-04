@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <article class="pt-12 lg:mx-auto prose lg:prose-xl"> 
+    <article class="pt-12 lg:mx-auto prose dark:prose-dark lg:prose-xl"> 
       <p>July 1st 2021</p>
       <h1>Garlic bread with cheese: What the science tells us</h1>
       <p>
