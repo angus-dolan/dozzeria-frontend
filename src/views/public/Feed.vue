@@ -23,8 +23,8 @@
       />
 
       <!-- Delightful GIFs (desktop only) -->
-      <h2 class="font-medium text-xl pt-2 pb-6">Delightful GIFs</h2>
-      <feed-gifs />
+      <!-- <h2 class="font-medium text-xl pt-2 pb-6">Delightful GIFs</h2>
+      <feed-gifs /> -->
     </div>
 
   </div>
@@ -33,13 +33,13 @@
 <script>
 import PostCard from '@/components/ui/public/feed/PostCard'
 import RecipeCard from '@/components/ui/public/shared/RecipeCard'
-import FeedGifs from '@/components/ui/public/feed/FeedGIFs'
+// import FeedGifs from '@/components/ui/public/feed/FeedGIFs'
 
 export default {
   components: {
     PostCard,
     RecipeCard,
-    FeedGifs
+    // FeedGifs
   }
 }
 </script>

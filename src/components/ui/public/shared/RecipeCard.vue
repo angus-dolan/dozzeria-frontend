@@ -1,5 +1,5 @@
 <template>
-  <div class="cursor-pointer flex border border-gray-200 dark:border-ui-dark-300 px-6 py-3 rounded-lg mb-3">
+  <div @click="pushToRecipe()" class="cursor-pointer flex border border-gray-200 dark:border-ui-dark-300 px-6 py-3 rounded-lg mb-3">
     <!-- image -->
     <img class="flex-initial object-cover rounded-full h-16 w-16" :src="imgURL" alt="Image not found">
     <!-- meta -->
@@ -36,6 +36,11 @@ export default {
       type: String,
       required: true
     },
+  },
+  methods: {
+    pushToRecipe() {
+      this.$router.push({ name: 'recipe' })
+    }
   }
 }
 </script>

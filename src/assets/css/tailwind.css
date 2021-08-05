@@ -37,3 +37,26 @@
     @apply transition duration-200 ease-in-out;
   }
 }
+
+/* [TRANSITIONS] */
+
+/* navbar */
+.animate-navbar {
+  z-index: 999;
+  transform: translate3d(0, 0, 0);
+  transition: 0.2s all ease-out;
+}
+.animate-navbar.hidden-navbar {
+  box-shadow: none;
+  transform: translate3d(0, -100%, 0);
+}
+/* slide-fade */
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}

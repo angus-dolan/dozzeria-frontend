@@ -9,22 +9,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Feed',
+      name: 'feed',
       component: require('@/views/public/Feed.vue').default
     },
     {
       path: '/post',
-      name: 'View Post',
+      name: 'post',
+      meta: {
+        returnToFeed: true
+      },
       component: () => import('@/views/public/Post.vue')
     },
     {
       path: '/recipe',
-      name: 'Recipe',
+      name: 'recipe',
+      meta: {
+        returnToFeed: true
+      },
       component: () => import('@/views/public/Recipe.vue')
     },
     {
       path: '/admin',
-      name: 'Admin Home',
+      name: 'admin-home',
       meta: { layout: 'admin' },
       component: () => import('@/views/admin/Home.vue')
     },

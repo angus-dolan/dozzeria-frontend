@@ -1,5 +1,5 @@
 <template>
-  <div class="cursor-pointer bg-white border border-gray-200 dark:border-transparent dark:bg-ui-dark-300 mb-3" style="border-radius: 30px">
+  <div @click="pushToPost()" class="cursor-pointer bg-white border border-gray-200 dark:border-transparent dark:bg-ui-dark-300 mb-3" style="border-radius: 30px">
     <!-- author -->
     <div class="flex pt-4 px-4">
       <avatar 
@@ -36,6 +36,10 @@
 
 <script>
 export default {
-  name: 'post-card',
+  methods: {
+    pushToPost() {
+      this.$router.push({ name: 'post' })
+    }
+  }
 }
 </script>

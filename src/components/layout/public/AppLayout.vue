@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-ui-light-100 dark:bg-ui-dark-50">
     <app-header />
-    <div class="container px-4 py-6 mx-auto">
+    <div class="container px-4 pb-6 mx-auto" style="padding-top: 7.125rem">
       <slot />
     </div>
   </div>
