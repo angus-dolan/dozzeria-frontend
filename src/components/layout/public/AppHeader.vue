@@ -32,7 +32,7 @@
 </template>
 
 <script>
-const OFFSET = 60
+const OFFSET = 90
 
 export default {
   data() {

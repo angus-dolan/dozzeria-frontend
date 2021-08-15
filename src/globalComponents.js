@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 /*
-  [SHARED]
+  [PUBLIC APP]
   - Components used only in public app
 */
 Vue.component('public-layout', 
@@ -22,4 +22,7 @@ Vue.component('admin-layout',
 */
 Vue.component('avatar', 
   () => import('@/components/common/Avatar')
+)
+Vue.component('modal', 
+  () => import('@/components/common/Modal')
 )

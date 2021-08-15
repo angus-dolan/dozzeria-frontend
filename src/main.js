@@ -5,6 +5,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import VueSocialSharing from 'vue-social-sharing'
+Vue.use(VueSocialSharing);
+
 import '@/globalComponents'
 
 Vue.config.productionTip = false

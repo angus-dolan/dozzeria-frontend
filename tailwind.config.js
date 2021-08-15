@@ -9,6 +9,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      tint: 'rgba(24, 24, 25, 0.6)', // gray.900 @ 60%
       primary: {
         '50': '#FFE4EA',
         '100': '#FFBBCB',

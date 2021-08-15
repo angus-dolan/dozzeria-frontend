@@ -7,11 +7,14 @@
         <return-feed-btn />
         <!-- Like post -->
         <div class="absolute md:relative top-0 md:top-auto">
-          <like-post />
+          <like-post :liked="postLiked" @onClick="likePost" />
         </div>
       </div>
       <!-- Feature image -->
-      <div class='cursor-pointer mb-6 md:my-6 bg-cover rounded-md bg-center' style='height:42vh; background-image: url("https://www.pizzacappuccino.com/wp-content/uploads/2019/02/Neapolitan-Pizza-Recipe.jpg")'></div>
+      <div 
+        class='cursor-pointer mb-6 md:my-6 bg-cover rounded-md bg-center' 
+        style='height:42vh; background-image: url("https://www.pizzacappuccino.com/wp-content/uploads/2019/02/Neapolitan-Pizza-Recipe.jpg")'
+      ></div>
     </div>
 
     <!-- Post Recipes -->
@@ -72,6 +75,22 @@ import ReturnFeedBtn from '@/components/ui/public/shared/ReturnFeedBtn'
 import LikePost from '@/components/ui/public/shared/LikePost'
 
 export default {
+  data() {
+    return {
+      postLiked: false,
+    }
+  },
+  methods: {
+    likePost() {
+      if (!this.postLiked) {
+        // Like post
+        this.postLiked = true
+      } else if (this.postLiked) {
+        // Unlike post
+        this.postLiked = false
+      }
+    }
+  },
   components: {
     RecipeCard,
     ReturnFeedBtn,
