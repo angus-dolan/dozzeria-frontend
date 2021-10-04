@@ -3,9 +3,13 @@
 
     <!-- Posts -->
     <div class="col-span-12 lg:col-span-6">
-      <post-card />
-      <post-card />
-      <post-card />
+      <post-card 
+        :postImg="'pizza.jpg'"
+        :postAuthor="'Angus Dolan'"
+        :postUsername="'angus'"
+        :title="'Classic Neapolitan Margherita'"
+        :date="'Wed, 26 January 2021'"
+      />
     </div>
     
     <div class="hidden lg:block col-start-8 col-span-5">
