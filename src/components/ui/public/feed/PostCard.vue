@@ -1,5 +1,5 @@
 <template>
-  <div @click="clickPost()" class="postcard select-none cursor-pointer bg-white border border-gray-200 dark:border-transparent dark:bg-ui-dark-300 mb-3" style="border-radius: 30px">
+  <div @click="clickPost()" class="postcard select-none cursor-pointer bg-white border border-gray-200 dark:border-transparent dark:bg-ui-dark-500 mb-3" style="border-radius: 30px">
     <!-- author -->
     <div class="flex pt-4 px-4">
       <avatar 

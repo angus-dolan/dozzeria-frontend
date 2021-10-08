@@ -53,16 +53,13 @@
     </div>
 
     <article class="pt-12 lg:mx-auto prose dark:prose-dark lg:prose-xl"> 
-      <p>July 1st 2021</p>
-      <h1>Garlic bread with cheese: What the science tells us</h1>
+      <p>3 months ago</p>
+      <h1>Wood Fired Margherita</h1>
       <p>
-        For years parents have espoused the health benefits of eating garlic bread with cheese to their
-        children, with the food earning such an iconic status in our culture that kids will often dress
-        up as warm, cheesy loaf for Halloween.
+        Cooked at 400°C
       </p>
       <p>
-        But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-        springing up around the country.
+        Since I wanted to test a 65% dough I decided to use Captuto Nuvola. This could last a 2 day or possibly 3 day fermention. This long proof and high hydration resulted in an extremely airy and light crust.
       </p>
     </article>
 

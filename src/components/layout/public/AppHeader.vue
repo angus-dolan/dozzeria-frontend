@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'hidden-navbar': !showNavbar }" class="animate-navbar fixed w-full border-b bg-white dark:bg-ui-dark-400 border-gray-200 dark:border-ui-dark-500">
+  <div :class="{ 'hidden-navbar': !showNavbar }" class="animate-navbar fixed w-full border-b bg-white dark:bg-ui-dark-500 border-gray-200 dark:border-ui-dark-500">
     <div class="container px-4 mx-auto flex justify-between flex-wrap content-center" style="height: 90px">
       <!-- return to /feed arrow (mobile only) -->
       <transition name="slide-fade">
