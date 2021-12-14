@@ -68,7 +68,9 @@
     "not dead"
   ],
   "jest": {
-    "snapshotSerializers": ["jest-serializer-vue"],
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
     "moduleFileExtensions": [
       "js",
       "json",
